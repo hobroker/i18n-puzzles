@@ -1,0 +1,35 @@
+{
+  "name": "i18n-puzzles",
+  "version": "1.0.0",
+  "description": "Internationali­zation Puzzle solutions in JS - https://i18n-puzzles.com/",
+  "keywords": [
+    "i18n-puzzles"
+  ],
+  "author": "Igor Leahu <me@hobroker.me>",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "ramda": "^0.30.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  }
+}
